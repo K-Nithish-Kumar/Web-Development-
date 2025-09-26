@@ -1,0 +1,43 @@
+.nav2{
+    background-color: #14ce81;
+    width:200px;
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.nav2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav2 li{
+    margin-bottom: 12px;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    padding:10px;
+    width:100%;
+}
+
+.nav2 a:hover{
+    background-color: #005f0d;
+}
+
+.login-btn{
+    background-color: #005f0d;
+    color:#fff;
+    border:none;
+    width:100%;
+    padding:10px;
+    cursor: pointer;
+    /* margin-left: 10px; */
+}
+
+.login-btn:hover{
+    background-color: #15b42a;
+    border:1px solid #fff;
+}
