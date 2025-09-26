@@ -11,12 +11,63 @@ body{
     justify-content: center;
     align-items: center;
     height:100vh;
-    background: linear-gradient(130deg,#181821,#79c713);
+    background: linear-gradient(130deg,#181821,#ff69ff);
 }
 
 .main-Container{
+    color:#fff;
     width:35%;
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:20px;
+    /* border:1px solid black; */
+    border-radius: 8px;
+    background: linear-gradient(130deg,rgb(99, 98, 98),rgb(83, 71, 255));
 }
 
+.inputField{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    padding:20px;
+}
+
+.inputA{
+    padding:10px 30px 10px 15px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+}
+
+.inputB{
+    padding:10px 30px 10px 15px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+}
+
+.add-btn{
+    padding:10px 40px;
+    border-radius: 5px;
+    border:none;
+    /* outline:none; */
+    background: linear-gradient(130deg,rgb(248, 97, 97),rgb(252, 252, 96));
+    color:#000;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.1s ease-in-out;
+}
+
+.add-btn:hover{
+    background: linear-gradient(130deg,rgb(255, 14, 34),#bdbdbd);
+    color:#fff;
+    cursor: pointer;
+}
+
+.result{
+    margin-top:20px;
+}
