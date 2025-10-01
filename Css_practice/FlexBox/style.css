@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    background:linear-gradient(90deg,#1d1d1d,#434343);
+    color:#fff;
+}
+
+
+.container{
+    width:50%;
+    height:350px;
+    border:2px solid #fff;
+    margin-bottom: 20px;
+    background-color: #b8b8b8;
+}
+
+.flexContainer01{
+    display: flex;
+}
+
+/* FlexBox: Justify-content */
+.flexContainer02{
+    display: flex;
+    /* justify-content: flex-start; /* items are packed toward the start of the main axis */
+    /* justify-content: flex-end;/*items are packed toward the end of the main axis */
+       justify-content: center; /* Items are grouped in the center of the main-axis
+    /* justify-content: space-between; /*First item goes to the start,last item to the end,and the rest are spaced equally between them */
+    /* justify-content: space-around; /*Items are evenly spaced,but also leave equal space on both sides,so outer items have hals-space compared to inner ones */
+    /* justify-content: space-evenly;/*Items are evenly distributed with equal space on all sides,including edges */
+}
+
+/* Align-items */
+.flexContainer03{
+    display: flex;
+    height:90%;
+    /* flex-direction: row; */
+    /* align-items: flex-start;/*items are aligned at the start of the cross axis */
+    /* align-items: flex-end; /*items are aligned at the end of the cross axis */
+    align-items:center;/* items are aligned at the center of the cross axis */
+    /* align-items: baseline;/* items are aligned so their text baselines line up */
+    /* align-items: stretch;/*itens stretch to fill the container along the cross axis */
+
+}
+
+/* flex-wrap */
+.flexContainer04{
+    display: flex;
+    /* flex-wrap:nowrap;/*All items stay on one line if they dont fit they overflow the container */
+    flex-wrap: wrap;/*items wrap to the next line when there isn't enough space
+    /* flex-wrap: wrap-reverse;/*similar to wrap,but new lines are added above the previous line */
+}
+
+/* align-content */
+.flexContainer05{
+    display: flex;
+    height:78%;
+    flex-wrap: wrap;
+    /* align-content: flex-start;All lines are packed towards the start of the cross-axis */
+    /* align-content: flex-end;All lines are packed towards the end of the cross-axis */
+    align-content:center;/*All lines are grouped in the center of the cross-axis
+    /* align-content: space-between;/*first line at the start,last line at the end,remaining lines spread evenly */
+    /* align-content: space-around;/*lines are evenly distributed with equal spaces on both sides */
+    /* align-content: space-evenly;/*Lines are evenly spaced with equal gaps everywhere */
+}
+
+.flexContainer06{
+    display: flex;
+}
+
+
+
+.circle{
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pastel1{
+    /* padding:10px; */
+    background-color: #da52f5;
+    margin-right: 10px;
+}
+
+.pastel2{
+    background-color: #f3568b;
+    margin-right: 10px;
+}
+
+.pastel3{
+    background-color: #71acfa;
+    margin-right: 10px;
+}
+
+.pastel4{
+    background-color: #f5a357;
+    margin-right: 10px;
+}
+
+.pastel5{
+    background-color: #a95bf3;
+    margin-right: 10px;
+}
