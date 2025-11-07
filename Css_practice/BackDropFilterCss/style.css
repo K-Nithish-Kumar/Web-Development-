@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+div img{
+    height:60vh;
+    width: 50vw;
+}
+
+div p {
+    position: absolute;
+    font-size: 40px;
+    /* backdrop-filter: blur(10px) brightness(300%); */
+    /* backdrop-filter: blur(10px) contrast(300%); */
+    backdrop-filter: hue-rotate(180deg);
+    /* backdrop-filter: invert(80%); */
+    /* backdrop-filter: sepia(120%); */
+    /* backdrop-filter: opacity(100%); */
+    /* backdrop-filter: brightness(100%); */
+    /* backdrop-filter: drop-shadow(4px 4px 10px red ); */
+}
