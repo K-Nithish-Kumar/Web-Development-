@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250vh;
+    width: 300vw;
+    background-color: black;
+}
+
+.main{
+    /* position: relative; */
+    height: 50vh;
+    width:50vw;
+    background-color: red;
+}
+
+
+.absolute{
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 10vh;
+    width: 10vw;
+    background-color: yellow;
+    animation: animate 5s ease-in-out infinite;
+    
+}
+
+.relative {
+    position: relative;
+    top:10px;
+    left:20px;
+    /* border: 1px solid yellow; */
+    height:10vh;
+    width:8vw;
+    background-color: #174ed7;
+}
+
+.sticky {
+    position: sticky;
+    top:10px;
+    left:80px;
+    height:10vh;
+    width:8vw;
+    background-color: #fff;
+}
+
+.fixed {
+    position: fixed;
+    top:100px;
+    left:40px;
+    height: 10vh;
+    width:10vw;
+    background-color: green;
+}
+
