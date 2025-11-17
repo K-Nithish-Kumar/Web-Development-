@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&family=Stack+Sans+Headline:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width:100%;
+    background-color: #450d0d;
+}
+
+.main-container{
+    width:100%;
+}
+
+.company-icon{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.company-icon .company-name{
+    font-size: 24px;
+    color: #dad9d9;
+    letter-spacing: 3px;
+    font-family: "Outfit",sans-serif;
+    margin-left: 8px;
+}
+
+.company-icon .nike-icon{
+    margin-left: 3px;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container{
+    width:30vw;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border:1px solid yellow; */
+}
+
+ul li {
+    list-style: none;
+    font-size: 24px;
+    color:#dad9d9;
+    font-family: 'Outfit',sans-serif;
+}
+
+.hero-image{
+    height:10vh;
+    width:100%;
+}
+
+.heroShoe-image{
+    overflow: hidden;
+    height:80vh;
+    width:65%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: image 1s ease-in 1;
+    transition: transform 2s ease;
+}
+
+@keyframes image {
+    0%{
+        position: absolute;
+        top:0;
+        left:0%;
+        transform: rotate(40deg);
+    }
+    
+
+    100% {
+        position: absolute;
+        top:10.5%;
+        left:17.3%;
+        transform: translate(-50%,-50%);
+        transform: rotate(0deg);
+    }
+    
+}
+
+.hero-section .content {
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.content .content-brand {
+    text-align: center;
+    font-size: 7rem;
+    font-family: 'Stack Sans Headline',sans-serif;
+    letter-spacing: 6px;
+    color: #fff;
+    /* opacity: 0; */
+    animation: TextUp 1s ease-in;
+    transition: animation 1s linear;
+}
+
+.content-des{
+    letter-spacing: 5px;
+    animation: TextUp 1s ease-in;
+
+}
+
+@keyframes TextUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }    
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.content .btn {
+    padding:12px 35px;
+    position: absolute;
+    left:50%;
+    top:30vh;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Outfit',sans-serif;
+    background: linear-gradient(to right, #515050,#000);
+    color: #fff;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.btn span {
+    height: 100%;
+    width:100%;
+    position: relative;
+    bottom:3px;
+    left:8px;
+    transition: left 0.3s ease;
+}
+
+.btn .shopping-bag {
+    position: relative;
+    left:15px;
+    top:3px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in,transform 0.3s ease;
+}
+
+.content .btn:hover .shopping-bag{
+    opacity: 1;
+    transform: scaleX(0.9);
+    cursor: pointer;
+}
+
+.btn:hover span{
+    position: relative;
+    bottom:3px;
+    left:0px;
+}
+
