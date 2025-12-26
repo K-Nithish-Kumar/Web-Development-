@@ -9,6 +9,7 @@ body {
 .hightlight {
     background-color: yellow;
     padding: 5px;
+    color: black;
 }
 
 .hidden {
